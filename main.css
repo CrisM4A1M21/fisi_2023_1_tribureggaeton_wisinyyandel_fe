@@ -76,9 +76,9 @@ body {
 .imagen_carrito {
   width: 24px;
   height: 24px;
-  background: url("../images/v38_1972.png");
+  background-image: url(img_carrito.png);
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center ;
   background-size: cover;
   opacity: 1;
   position: absolute;
@@ -131,7 +131,7 @@ body {
   background: rgba(255,255,255,1);
   opacity: 1;
   position: absolute;
-  top: 49px;
+  top: 5%;
   left: 42px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -140,9 +140,11 @@ body {
   overflow: hidden;
 }
 .receptor_img_producto {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   width: 80px;
   height: 80px;
-  background: rgba(85,85,85,1);
   opacity: 1;
   position: absolute;
   top: 18px;
@@ -168,9 +170,6 @@ body {
 .frame_aumento_producto {
   width: 15%;
   height: 100%;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
   opacity: 1;
   position: absolute;
   top: 0;
@@ -197,24 +196,14 @@ body {
   position: absolute;
   top: 35%;
   left: 55%;
+  font-size: 25px;
   border-radius: 100%;
-  font-family: Inter;
-  font-weight: Regular;
-  font-size: 15px;
-  opacity: 1;
-  text-align: left;
-}
-.texto_mas{
-  top: 0%;
-  color: rgba(0,0,0,1);
-  position: absolute;
-  font-family: Inter;
-  font-weight: Regular;
-  font-size: 20px;
   opacity: 1;
   text-align: center;
+  cursor: pointer;
 }
 .menos {
+  font-size: 25px;
   background-color: rgb(189, 43, 43);
   height: 30px;
   width: 30px;
@@ -223,21 +212,9 @@ body {
   top: 35%;
   left: 20%;
   border-radius: 100%;
-  font-family: Inter;
-  font-weight: Regular;
-  font-size: 15px;
-  opacity: 1;
-  text-align: left;
-}
-.texto_menos{
-  top: 0%;
-  color: rgba(0,0,0,1);
-  position: absolute;
-  font-family: Inter;
-  font-weight: Regular;
-  font-size: 20px;
   opacity: 1;
   text-align: center;
+  cursor: pointer;
 }
 .monto {
   width: 10%;
@@ -264,6 +241,7 @@ body {
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
   overflow: hidden;
+  cursor: pointer;
 }
 .texto_button_adir {
   width: 100%;

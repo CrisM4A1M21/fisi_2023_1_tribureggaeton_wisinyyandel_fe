@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
+<head>
         <link href="https://fonts.googleapis.com/css?family=Kyiv*Type+Serif&display=swap" rel="stylesheet" />
-        <link href="./css/main.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
+        <link href="main.css" rel="stylesheet" />
         <title>Campesin Tienda Online</title>
-    </head>
-    <body>
+        <meta charset="utf-8">
+</head>
+<body>
         <div class="v38_1965">
             <div class="linea_amarilla"></div>
             <div class="background_azul">
@@ -22,32 +23,16 @@
             
         </div>
         <div class="fondo_gris">
-            <div class="fondo_blanco">
-                <div class="receptor_img_producto"></div>
-                <span class="nombre_producto">Nombre del producto 1</span>
-                <div class="frame_aumento_producto">
-                    <div class="cuadrado"></div>
-                    <span class="cantidad">0</span>
-                    <button class="mas">
-                        <span class="texto_mas">+</span>
-                    </button>
-                    <button class="menos">
-                        <span class="texto_menos">-</span>
-                    </button>
-                </div>
-                <span class="monto">S/ Precio</span>
-                <button class="button_anadir">
-                    <span class="texto_button_adir">Añadir</span>
-                </button>                
-            </div>            
+                <?php
+                include("mostrar.php")
+                ?>            
         </div>
         <div class="fondogris" id="fondogris"></div>
         <div class="popup" id="popup">
             <div class="contenedor_popup" id="contenedor_popup">
-                <div class="contenedor_items">
-                    <div class="contenedor_img"></div> 
-                    <div class="contenedor_cantidad">n°</div> 
-                </div> 
+                <?php
+                include("mostrar2.php")
+                ?>    
             </div>
             <span class ="subtotal">Subtotal</span>
             <span class ="preciototal">S/Precio total</span>
@@ -57,7 +42,10 @@
         </div>
        
         <div class="pico_popup" id="pico_popup"></div>
-        <script src="./js/JsPrincipal.js"></script>
+        <script src="JsPrincipal.js"></script>
         
-    </body>
+</body>
 </html>
+
+        
+        
